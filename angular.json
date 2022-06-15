@@ -94,12 +94,16 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "styles.scss",
+              "node_modules/ngx-toastr/toastr.css" 
             ],
             "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "94855061-0249-48c9-bda1-3b53aab3908d"
   }
 }

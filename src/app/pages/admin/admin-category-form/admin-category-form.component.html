@@ -1,0 +1,23 @@
+<div>
+    <a routerLink="/admin/category">
+        <button class="btn btn-primary">Come Back</button>
+    </a>
+</div>
+<br>
+
+<!-- Xác định xem form được quản lí bằng biến nào -->
+<form [formGroup]="categoryForm" (ngSubmit)="onSubmit()">
+    <h2>Create Category</h2> <br>
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Name</label>
+        <!-- Định nghĩa input được quản lí bởi key nào bằng FormformControlName -->
+        <input type="text" class="form-control bd" formControlName="name" >
+        <app-show-validate
+          [field]="categoryForm.get('name')"
+          key="Tên danh mục"
+        ></app-show-validate>
+    </div>
+    <div>
+        <button class="btn btn-success" [disabled]="!categoryForm.valid">Submit</button>
+    </div>
+  </form>

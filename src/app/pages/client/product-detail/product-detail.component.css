@@ -1,0 +1,7 @@
+.related{
+    width: 100%;
+    display: flex;
+}
+.related-img{
+    width: 25%;
+}
